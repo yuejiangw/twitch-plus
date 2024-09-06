@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: backend
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/twitch?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456  # update it to your own password
+
+  jackson:
+    default-property-inclusion: non_null
+
+  security:
+    oauth2:
+      client:
+        registration:
+          twitch:
+            authorization-grant-type: client_credentials
+            client-authentication-method: client_secret_post
+            client-id: "Your twitch client id"
+            client-secret: "Your twitch client secret"
+        provider:
+          twitch:
+            token-uri: https://id.twitch.tv/oauth2/token
+
+  cloud:
+    openfeign:
+      oauth2:
+        clientRegistrationId: twitch
+        enabled: true
+      client:
+        config:
+          twitch-api:
+            url: https://api.twitch.tv/helix
+            logger-level: basic
+            default-request-headers:
+              Client-Id: "Your twitch client id"
