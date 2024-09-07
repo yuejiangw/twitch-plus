@@ -10,6 +10,7 @@ function PageHeader({ loggedIn, signoutOnClick, signinOnSuccess, favoriteItems }
     return (
         <Header>
             <Row justify='space-between'>
+                <strong style={{color: 'white', fontSize: '20px'}}>Twitch+</strong>
                 <Col>
                     {loggedIn && <Favorites favoriteItems={favoriteItems} />}
                 </Col>
