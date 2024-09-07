@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Layout, message } from 'antd';
 import { logout, getFavoriteItem } from './utils';
 import PageHeader from './components/PageHeader';
+import CustomSearch from './components/CustomSearch';
 
 const { Header, Content, Sider } = Layout;
 
@@ -37,7 +38,7 @@ function App() {
             </Header>
             <Layout>
                 <Sider width={300} className="site-layout-background">
-                    {'Sider'}
+                    <CustomSearch onSuccess={() => { }} />
                 </Sider>
                 <Layout style={{ padding: '24px' }}>
                     <Content
