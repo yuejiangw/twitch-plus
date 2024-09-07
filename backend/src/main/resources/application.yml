@@ -26,8 +26,8 @@ spring:
           twitch:
             authorization-grant-type: client_credentials
             client-authentication-method: client_secret_post
-            client-id: "ziejjspwrws09g1bvj3a20kd6frtrf"
-            client-secret: "wjot2b6tykirdnuoqwmr2z0oo5sbga"
+            client-id: "3kf2dj3q58uetwdocg8d9cgbuc9y4g"
+            client-secret: "26qjgwd5izalrfuhns764upiizqbw5"
         provider:
           twitch:
             token-uri: https://id.twitch.tv/oauth2/token
@@ -43,7 +43,7 @@ spring:
             url: https://api.twitch.tv/helix
             logger-level: basic
             default-request-headers:
-              Client-Id: "ziejjspwrws09g1bvj3a20kd6frtrf"
+              Client-Id: "3kf2dj3q58uetwdocg8d9cgbuc9y4g"
 
 logging:
   level:
