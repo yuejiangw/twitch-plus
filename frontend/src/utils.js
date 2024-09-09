@@ -1,4 +1,4 @@
-const SERVER_ORIGIN = '';
+const SERVER_ORIGIN = 'http://localhost:8080';
 
 const loginUrl = `${SERVER_ORIGIN}/login`;
 
