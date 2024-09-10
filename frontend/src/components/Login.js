@@ -32,7 +32,7 @@ function Login({ onSuccess }) {
             </Button>
             <Modal
                 title="Log in"
-                visible={displayModal}
+                open={displayModal}
                 onCancel={handleCancel}
                 footer={null}
                 destroyOnClose={true}

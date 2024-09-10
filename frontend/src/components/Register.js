@@ -30,7 +30,7 @@ function Register() {
                 Register</Button>
             <Modal
                 title="Register"
-                visible={displayModal}
+                open={displayModal}
                 onCancel={handleCancel}
                 footer={null}
                 destroyOnClose={true}

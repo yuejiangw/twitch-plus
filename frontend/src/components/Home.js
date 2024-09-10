@@ -3,7 +3,6 @@ import { Button, Card, List, message, Tabs, Tooltip } from 'antd';
 import { StarOutlined, StarFilled } from '@ant-design/icons';
 import { addFavoriteItem, deleteFavoriteItem } from '../utils';
 
-const { TabPane } = Tabs;
 const tabKeys = {
     Streams: 'stream',
     Videos: 'videos',
@@ -95,20 +94,29 @@ const Home = ({ resources, loggedIn, favoriteItems, favoriteOnChange }) => {
     const { videos, streams, clips} = resources;
     const { videos: favVideos, streams: favStreams, clips: favClips } = favoriteItems;
 
+    const items = [
+        {
+            key: tabKeys.Streams,
+            label: 'Streams',
+            children: renderCardGrid(streams, loggedIn, favStreams, favoriteOnChange),
+            forceRender: true,
+        },
+        {
+            key: tabKeys.Videos,
+            label: 'Videos',
+            children: renderCardGrid(videos, loggedIn, favVideos, favoriteOnChange),
+            forceRender: true,
+        },
+        {
+            key: tabKeys.Clips,
+            label: 'Clips',
+            children: renderCardGrid(clips, loggedIn, favClips, favoriteOnChange),
+            forceRender: true,
+        },
+    ];
+
     return (
-        <Tabs
-            defaultActiveKey={tabKeys.Streams}
-        >
-            <TabPane tab="Streams" key={tabKeys.Streams} forceRender={true}>
-                {renderCardGrid(streams, loggedIn, favStreams, favoriteOnChange)}
-            </TabPane>
-            <TabPane tab="Videos" key={tabKeys.Videos} forceRender={true}>
-                {renderCardGrid(videos, loggedIn, favVideos, favoriteOnChange)}
-            </TabPane>
-            <TabPane tab="Clips" key={tabKeys.Clips} forceRender={true}>
-                {renderCardGrid(clips, loggedIn, favClips, favoriteOnChange)}
-            </TabPane>
-        </Tabs>
+        <Tabs items={items} />
     );
 }
 

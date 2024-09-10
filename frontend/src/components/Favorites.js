@@ -26,7 +26,7 @@ function Favorites({ favoriteItems }) {
                 title="My Favorites"
                 placement="right"
                 width={720}
-                visible={displayDrawer}
+                open={displayDrawer}
                 onClose={onDrawerClose}
             >
                 <Menu
