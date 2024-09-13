@@ -1,4 +1,4 @@
-import {Layout, Row, Col, Button, Image, Avatar} from 'antd'
+import {Layout, Row, Col, Button, Avatar} from 'antd'
 import Favorites from './Favorites'
 import Register from './Register'
 import Login from './Login'
