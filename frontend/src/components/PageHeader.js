@@ -1,4 +1,4 @@
-import { Layout, Row, Col, Button } from 'antd'
+import {Layout, Row, Col, Button, Image, Avatar} from 'antd'
 import Favorites from './Favorites'
 import Register from './Register'
 import Login from './Login'
@@ -10,7 +10,10 @@ function PageHeader({ loggedIn, signoutOnClick, signinOnSuccess, favoriteItems }
     return (
         <Header>
             <Row justify='space-between'>
-                <strong style={{color: 'white', fontSize: '20px'}}>Twitch+</strong>
+                <Col>
+                    <Avatar title={'Twitch-Plus'} color={'white'} alt={'icon'} src='logo.svg' />
+                    <strong style={{color: 'white', fontSize: '20px', padding: '10px'}}>Twitch+</strong>
+                </Col>
                 <Col>
                     {loggedIn && <Favorites favoriteItems={favoriteItems} />}
                 </Col>
