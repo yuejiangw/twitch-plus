@@ -1,12 +1,15 @@
 # Twitch-plus
-A recommendation system based on Spring Boot and React
+
+A fullstack recommendation system based on Spring Boot and React
 
 ## Before you start
 
 1. You must have a Twitch account with a verified emai
 2. Log in to the [developer console](https://dev.twitch.tv/console) using your Twitch account
-3. Select the **Applications** tab on the developer console and then click **Register Your Application**  
-4. Reference: [Registering Your Apii](https://dev.twitch.tv/docs/authentication/register-app/)
+3. Select the **Applications** tab on the developer console and then click **Register Your Application** 
+	1. Make sure the application name is unique, or the registion will fail silently
+	2. For the redirect URL, use `http://localhost` because we are using `client_credentials` for authentication
+4. Reference: [Registering Your Application](https://dev.twitch.tv/docs/authentication/register-app/)
 
 ## Resources
 
