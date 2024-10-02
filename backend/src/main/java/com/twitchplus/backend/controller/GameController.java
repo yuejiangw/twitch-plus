@@ -1,5 +1,6 @@
-package com.twitchplus.backend.external;
+package com.twitchplus.backend.controller;
 
+import com.twitchplus.backend.external.TwitchService;
 import com.twitchplus.backend.external.model.Game;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
