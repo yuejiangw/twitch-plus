@@ -33,7 +33,7 @@ public class AppConfig {
                         .requestMatchers(HttpMethod.GET, "/", "/index.html", "/*.json", "/*.png", "/static/**").permitAll()
                         .requestMatchers("/hello/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/login", "/register", "/logout").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/recommendation", "/game").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/recommendation", "/game", "/search").permitAll()
                         .anyRequest().authenticated()
                 )
                 // 处理未授权请求
