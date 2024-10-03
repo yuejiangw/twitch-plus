@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS twitch;
+USE twitch;
 DROP TABLE IF EXISTS favorite_records;
 DROP TABLE IF EXISTS authorities;
 DROP TABLE IF EXISTS items;
