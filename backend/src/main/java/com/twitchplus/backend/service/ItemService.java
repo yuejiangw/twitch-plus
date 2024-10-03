@@ -1,6 +1,5 @@
 package com.twitchplus.backend.service;
 
-import com.twitchplus.backend.external.TwitchService;
 import com.twitchplus.backend.external.model.Clip;
 import com.twitchplus.backend.external.model.Stream;
 import com.twitchplus.backend.external.model.Video;

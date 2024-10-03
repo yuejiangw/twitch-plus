@@ -8,6 +8,7 @@ import com.twitchplus.backend.dao.entity.UserEntity;
 import com.twitchplus.backend.exception.DuplicateFavoriteException;
 import com.twitchplus.backend.model.TypeGroupedItemList;
 import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
