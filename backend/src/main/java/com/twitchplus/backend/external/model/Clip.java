@@ -2,6 +2,7 @@ package com.twitchplus.backend.external.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+// ref: https://dev.twitch.tv/docs/api/clips/#getting-clips
 public record Clip(
         String id,
         String url,

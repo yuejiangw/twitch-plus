@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+// ref: https://dev.twitch.tv/docs/api/videos/
 public record Video(
         String id,
         @JsonProperty("stream_id") String streamId,

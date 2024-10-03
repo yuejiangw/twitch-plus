@@ -28,6 +28,7 @@ spring:
             client-secret: "26qjgwd5izalrfuhns764upiizqbw5"
         provider:
           twitch:
+            # ref: https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/#client-credentials-grant-flow
             token-uri: https://id.twitch.tv/oauth2/token
 
   datasource:

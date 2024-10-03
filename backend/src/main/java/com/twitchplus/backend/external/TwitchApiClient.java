@@ -16,7 +16,7 @@ public interface TwitchApiClient {
     GameResponse getGames(@RequestParam("name") String name);
 
     @GetMapping("/games/top")
-    GameResponse getTopGames();
+    GameResponse getTopGames(); // ref: https://dev.twitch.tv/docs/api/reference/#get-top-games
 
     @GetMapping("/videos/")
     VideoResponse getVideos(@RequestParam("game_id") String gameId, @RequestParam("first") int first);
