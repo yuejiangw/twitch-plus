@@ -10,6 +10,7 @@ Twitch-plus is a fullstack project designed to interact with Twitch's API, provi
 - [Gallary](#gallary)
 - [Architecture](#architecture)
 - [Contributing](#contributing)
+- [License](#license)
 - [Resources](#resources)
 
 ## Prerequisite
@@ -92,6 +93,10 @@ The backend service is built using Spring Boot and follows a layered architectur
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Resources
 
